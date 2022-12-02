@@ -29,6 +29,6 @@ file.on('line', (line) => {
     }
 });
 
-setTimeout(() => {
-  console.log(elf);
-}, 5000);
+file.on('close', () => {
+  console.log(max);
+});

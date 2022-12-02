@@ -35,6 +35,6 @@ file.on('line', (line) => {
     }
 });
 
-setTimeout(() => {
+file.on('close', () => {
   console.log(max + second + third);
-}, 5000);
+});
